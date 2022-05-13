@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:pro": "webpack --config ./webpack/dev.config.js",
+    "build:pro": "webpack --config ./webpack/prod.config.js",
     "build:dev": "webpack server --config ./webpack/dev.config.js"
   },
   "keywords": [],
@@ -15,13 +15,17 @@
     "@babel/core": "^7.17.9",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "@vue/compiler-sfc": "^3.2.33",
     "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.7",
+    "eslint-define-config": "^1.4.0",
+    "eslint-plugin-vue": "^8.7.1",
     "html-entities": "^2.3.3",
     "html-webpack-plugin": "^5.5.0",
     "less": "^4.1.2",
@@ -33,6 +37,7 @@
     "style-loader": "^3.3.1",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3",
+    "vue-loader": "^17.0.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1",
@@ -41,9 +46,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
+    "axios": "^0.26.1",
     "core-js": "^3.21.1",
     "dayjs": "^1.11.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "vue": "^3.2.33"
   }
 }

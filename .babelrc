@@ -7,8 +7,13 @@
         "corejs": 3
       }
     ],
-    "@babel/preset-react",
-    "@babel/preset-typescript"
+
+    [
+      "@babel/preset-typescript",
+      {
+        "allExtensions": true
+      }
+    ]
   ],
   "plugins": [
     [
